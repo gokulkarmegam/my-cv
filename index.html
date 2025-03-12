@@ -43,7 +43,6 @@
             visibility: visible;
             opacity: 1;
         }
-        /*** Spinner End ***/
 
         .back-to-top {
             position: fixed;
@@ -250,7 +249,6 @@
             margin-right: calc(100% + 40px);
             color: var(--bs-primary);
         }
-        /*** Navbar End ***/
 
         /*** About Start ***/
         .about-content .about-img {
@@ -272,7 +270,6 @@
         .about-content .about-img:hover .sosial-icon {
             top: 0;
         }
-        /*** About End ***/
 
         /*** Education Start ***/
         .education-content .education-item {
@@ -313,7 +310,6 @@
             border-color: var(--bs-light) var(--bs-light) var(--bs-light) transparent;
             z-index: -1;
         }
-        /*** Education End ***/
 
         /*** Experience start ***/
         .experience-content .experience-item {
@@ -354,7 +350,6 @@
             border-color: var(--bs-light) var(--bs-light) var(--bs-light) transparent;
             z-index: -1;
         }
-        /*** Experience End ***/
 
         /*** Skills Start ***/
         .skills-content .skills-item {
@@ -371,7 +366,6 @@
             font-size: 1.1rem;
             font-weight: 500;
         }
-        /*** Skills End ***/
 
         /*** Service start ***/
         .service-content .service-item {
@@ -386,7 +380,6 @@
         .service-content .service-item:hover {
             box-shadow: 0 0 30px rgba(0, 0, 0, .08);
         }
-        /*** service End ***/
 
         /* Custom CSS to change the color of the carousel control icons */
         .carousel-control-prev-icon,
@@ -433,7 +426,6 @@
         .text-small-test1 {
             font-size: 1.5rem;
         }
-        /*** Portfolio End ***/
 
         /* Custom CSS for bullet points */
         .experience-item ul {
@@ -454,7 +446,6 @@
         .blog-content .blog-btn a:hover {
             color: var(--bs-dark);
         }
-        /*** Blog End ***/
 
         /*** Testimonial Start ***/
         .testimonial-carousel {
@@ -531,7 +522,6 @@
             height: 70px;
             border: 3px solid var(--bs-primary);
         }
-        /*** Testimonial End ***/
 
         /*** footer Start ***/
         @media (max-width: 991px) {
@@ -539,19 +529,17 @@
                 padding-left: 0;
             }
         }
-        /*** footer End ***/
     </style>
 </head>
 
 <body>
-    <!-- Your HTML content goes here -->
+   
      <!-- Spinner Start -->
      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
@@ -566,7 +554,6 @@
             </div>
         </nav>
     </div>
-    <!-- Navbar End -->
 
     <!-- Header Start -->
     <div class="container-fluid" id="Home">
@@ -617,39 +604,101 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid" id="About">
+
+      <!-- Portfolio Start -->
+      <div class="container-fluid" id="Portfolio">
         <div class="container">
             <div class="row g-0">
-                <div class="col-12 col-lg-3">
-                    <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
+                <div class="col-lg-3">
+                    <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
                         <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">About Me</p>
-                            <h1 class="display-6 text-white mb-0"></h1>
+                            <p class="text-white sub-title">Portfolio</p>
+                            <h1 class="display-6 text-white mb-0">My Project</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="about-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-5">
-                          
-                            <div class=" wow fadeInUp" data-wow-delay="0.3s">
-                                <h4 class="mb-4">Hello, I'm Gokul Karmegam, Based in Madurai</h4>
-                                <p class="mb-4">I started preparing for TNPSC after college but quit in January last year. After that, I began working as a photographer. In March 2024, I started learning about Front-end Development and completed two courses on JavaScript and React from Namaste JavaScript and Scalar, respectively.</p>
-                                <div class="row g-4 mb-4">
-                                    <div >
-                                        <p class="mb-3">
-                                            <strong class="fw-bold text-dark">Address :</strong>
-                                           <div class="flex"> Thirunagar,
-                                            Kalayarkoil<br>
-                                            Sivagangai,<br>
-                                            Tamilnadu</div>
-                                        </p>
+                <div class="col-lg-9">
+                    <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
+                        <div class="portfolio-item  border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <h3 class="mb-3">Project: Movie Library Application</h3>
+                                            <p><strong>Technologies:</strong> React.js, React Router, Context API, Axios, LocalStorage, TMDB API</p>
+                                            <ul class="mb-0">
+                                              <li>Developed a movie library application using React.js, enabling users to browse popular movies, view detailed information, and manage a personalized watchlist.</li>
+                                              <li>Implemented routing using React Router for seamless navigation between the home page, movie details, and watchlist.</li>
+                                              <li>Utilized Context API for state management to handle the watchlist functionality across components.</li>
+                                              <li>Integrated the TMDB API to fetch and display movie data, including posters, titles, ratings, genres, and release dates.</li>
+                                              <li>Built a responsive UI with features like pagination, search, and filtering by genre, along with sorting options for popularity and ratings.</li>
+                                              <li>Added local storage support to persist the watchlist and user preferences (e.g., current genre, page number) across sessions.</li>
+                                              <li>Designed a skeleton loading state to enhance user experience during data fetching.</li>
+                                              <li>Created reusable components such as MovieCard, Pagination, and Navbar to ensure modularity and scalability.</li>
+                                              <li>Implemented dynamic routing for movie details, allowing users to click on a movie card to view its comprehensive information.</li>
+                                            </ul>
+                                            <div class=" m-4 align-items-center">
+                                                <a href="https://gokulkarmegam.github.io/movie-library/" target="_blank" class="mb-0"><u>View Live Project</u></a>
+                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Start -->
+    <div class="container-fluid" id="Certification">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Certifications</p>
+                            <h1 class="display-6 text-white mb-0">My Certifications</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="experience-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">React Js</p>
+                                        <div>
+                                            <span class="fa fa-calendar me-1"></span> 2025
+                                        </div>
                                     </div>
-                                    
+                                    <h4 class="mb-3">React JS on Scalar
+                                        <a href="https://moonshot.scaler.com/s/sl/z1lgKDJJqs?_gl=1*57y5ez*_gcl_au*MTk1ODA1ODg5OS4xNzM4ODY3MjI1*FPAU*MTY1OTA2NTA3NC4xNzM4ODU1ODU1*_ga*MzkyNzM0MzI1LjE3Mzg4NTU4NTU.*_ga_53S71ZZG1X*MTc0MDg1NjM5NC4xMDYuMS4xNzQwODU4MTg0LjAuMC4xMTAyNTI0NTg." target="_blank" >
+                                <u> view certificate </u> 
+                            </a>
+                                    </h4>
+                                    <ul class="mb-0">
+                                        <li>Basics of React JS and JSX syntax</li>
+                                        <li>Creating and managing React components</li>
+                                        <li>State management and lifecycle methods</li>
+                                        <li>Routing with React Router for SPA development</li>
+                                        <li>Advanced concepts like Context API and Hooks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">JavaScript</p>
+                                        <div>
+                                            <span class="fa fa-calendar me-1"></span> 2024-2025
+                                        </div>
+                                    </div>
+                                    <h4 class="mb-3">JavaScript on Namaste JavaScript
+                                        <a href="https://namastedev.com/gokulakannankarmegam/certificates/namaste-javascript" target="_blank" >
+                               <u>view certificate</u>
+                            </a>
+                                    </h4>
+                                    <ul class="mb-0">
+                                        <li>The plan is to cover all the important concepts in JS, including the tricky ones like Closures, Prototypal Inheritance, Promises, and the Event Loop.</li>
+                                        <li>Namaste JavaScript course videos will also focus on things that are asked in interviews.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -658,11 +707,81 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+
+    <!-- Skills Start -->
+    <div class="container-fluid" id="Skills">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Skills</p>
+                            <h1 class="display-6 text-white mb-0">languages and Frameworks</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="skills-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="text-primary text-center mb-3">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" style="width: 48px; height: 48px;">
+                                    </div>
+                                    <p class="mb-0">React</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="text-primary text-center mb-3">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" style="width: 48px; height: 48px;">
+                                    </div>
+                                    <p class="mb-0">JavaScript</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="text-primary text-center mb-3">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" style="width: 48px; height: 48px;">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" style="width: 48px; height: 48px;">
+                                    </div>
+                                    <p class="mb-0">HTML & CSS</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="text-primary text-center mb-3">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git" style="width: 48px; height: 48px;">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub" style="width: 48px; height: 48px;">
+                                    </div>
+                                    <p class="mb-0">Git & GitHub</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="text-primary text-center mb-3">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="Tailwind CSS" style="width: 48px; height: 48px;">
+                                    </div>
+                                    <p class="mb-0">Tailwind CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <!-- Education Start -->
-    <div class="container-fluid">
+  
+     <!-- Education Start-->
+     <div class="container-fluid">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-3">
@@ -707,180 +826,6 @@
             </div>
         </div>
     </div>
-    <!-- Education End -->
-
-    <!-- Certifications Start -->
-    <div class="container-fluid" id="Certification">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Certifications</p>
-                            <h1 class="display-6 text-white mb-0">My Certifications</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="experience-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p class="fs-5 mb-0 me-4">React Js</p>
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2025
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">React JS on Scalar
-                                        <a href="https://moonshot.scaler.com/s/sl/z1lgKDJJqs?_gl=1*57y5ez*_gcl_au*MTk1ODA1ODg5OS4xNzM4ODY3MjI1*FPAU*MTY1OTA2NTA3NC4xNzM4ODU1ODU1*_ga*MzkyNzM0MzI1LjE3Mzg4NTU4NTU.*_ga_53S71ZZG1X*MTc0MDg1NjM5NC4xMDYuMS4xNzQwODU4MTg0LjAuMC4xMTAyNTI0NTg." target="_blank" >
-                                <u>view certificate</u> 
-                            </a>
-                                    </h4>
-                                    <ul class="mb-0">
-                                        <li>Basics of React JS and JSX syntax</li>
-                                        <li>Creating and managing React components</li>
-                                        <li>State management and lifecycle methods</li>
-                                        <li>Routing with React Router for SPA development</li>
-                                        <li>Advanced concepts like Context API and Hooks</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <p class="fs-5 mb-0 me-4">JavaScript</p>
-                                        <div>
-                                            <span class="fa fa-calendar me-1"></span> 2024-2025
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-3">JavaScript on Namaste JavaScript
-                                        <a href="https://namastedev.com/gokulakannankarmegam/certificates/namaste-javascript" target="_blank" >
-                               <u>view certificate</u>
-                            </a>
-                                    </h4>
-                                    <ul class="mb-0">
-                                        <li>The plan is to cover all the important concepts in JS, including the tricky ones like Closures, Prototypal Inheritance, Promises, and the Event Loop.</li>
-                                        <li>Namaste JavaScript course videos will also focus on things that are asked in interviews.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Certifications End -->
-
-
-    <!-- Skills Start -->
-    <div class="container-fluid" id="Skills">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Skills</p>
-                            <h1 class="display-6 text-white mb-0">My Expertise Skills</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-4">
-                            <!-- React -->
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" style="width: 48px; height: 48px;">
-                                    </div>
-                                    <p class="mb-0">React</p>
-                                </div>
-                            </div>
-                            <!-- JavaScript -->
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" style="width: 48px; height: 48px;">
-                                    </div>
-                                    <p class="mb-0">JavaScript</p>
-                                </div>
-                            </div>
-                            <!-- HTML & CSS -->
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" style="width: 48px; height: 48px;">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" style="width: 48px; height: 48px;">
-                                    </div>
-                                    <p class="mb-0">HTML & CSS</p>
-                                </div>
-                            </div>
-                            <!-- Git/GitHub -->
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git" style="width: 48px; height: 48px;">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub" style="width: 48px; height: 48px;">
-                                    </div>
-                                    <p class="mb-0">Git & GitHub</p>
-                                </div>
-                            </div>
-                            <!-- Tailwind CSS -->
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="text-primary text-center mb-3">
-                                        <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="Tailwind CSS" style="width: 48px; height: 48px;">
-                                    </div>
-                                    <p class="mb-0">Tailwind CSS</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skills End -->
-
-
-
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid" id="Portfolio">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Portfolio</p>
-                            <h1 class="display-6 text-white mb-0">My Recent Works</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                        <div class="portfolio-item  border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="row g-4 align-items-center">
-                                <div class="mb-4">
-                                    <h4 class="text-body">Movies And WatchList</h4>
-                                    <h1 class="mb-4" style="font-size: 1.5rem;">Display of trending movies where you can add a movie to watchlist and sort movies based on Genre, Rating, and Popularity</h1>
-                                    <a href="https://gokulkarmegam.github.io/movie-library/" target="_blank" class="mb-0"><u>View Live Project</u></a>
-                                </div>
-                                <div class="col-xl-6">
-                                    <!-- Additional content can go here -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
 
 
 
